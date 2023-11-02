@@ -1,0 +1,43 @@
+$espacamento-xs: 8px;
+$espacamento-s: 16px;
+$cor-branco: #ffffff;
+$cor-neutra-a: #373737;
+
+$font-weight: 400;
+$font-size-label: 20px;
+$line-height-label: 24px;
+$font-size-input: 14px;
+$line-height-input: 17px;
+
+.label-estilizada {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: $font-weight;
+    font-size: $font-size-label;
+    line-height: $line-height-label;
+}
+
+.input-estilizado {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: $espacamento-xs;
+    margin-bottom: $espacamento-s;
+    background: $cor-branco;
+    border: 1px solid;
+    border-color: $cor-neutra-a;
+    border-radius: $espacamento-s;
+    height: 40px;
+    font-weight: $font-weight;
+    font-size: $font-size-input;
+    line-height: $line-height-input;
+}
+
+.campo-texto {
+    @extend .label-estilizada;
+    
+    input {
+        @extend .input-estilizado;
+    }
+}

@@ -1,0 +1,61 @@
+// styles.scss
+
+$cor-primaria: #58774C;
+$cor-secundaria: #B61B00;
+$cor-texto-primaria: #FFF;
+$cor-texto-secundaria: #58774C;
+$cor-borda-secundaria: #58774C;
+$cor-foco-secundaria: #16280D;
+$raio-borda: 16px;
+$tamanho-padding: 8px 16px;
+$font-weight: 700;
+$font-size: 16px;
+$line-height: 20px;
+$text-align: center;
+$cursor-pointer: pointer;
+$border-none: none;
+
+.botao-primario {
+    background: $cor-primaria;
+    color: $cor-texto-primaria;
+    border-radius: $raio-borda;
+    padding: $tamanho-padding;
+    box-sizing: border-box;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+    cursor: $cursor-pointer;
+    border: $border-none;
+
+    &:hover {
+        background: $cor-secundaria;
+    }
+
+    &:focus {
+        outline-color: $cor-secundaria;
+    }
+}
+
+.botao-secundario {
+    background: transparent;
+    color: $cor-texto-secundaria;
+    border: 2px solid $cor-borda-secundaria;
+    border-radius: $raio-borda;
+    padding: $tamanho-padding;
+    box-sizing: border-box;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+    cursor: $cursor-pointer;
+
+    &:hover {
+        border-color: $cor-secundaria;
+        color: $cor-secundaria;
+    }
+
+    &:focus {
+        outline-color: $cor-foco-secundaria;
+    }
+}
